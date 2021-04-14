@@ -9,7 +9,7 @@
         </div>
         <div>
             <label>Address :</label>
-            <asp:TextBox type="text" ID="text_address" class="form-control" runat="server"/>
+            <asp:TextBox type="text" ID="text_Name" class="form-control" runat="server"/>
         </div>
         <div>
             <label>DOB :</label>
