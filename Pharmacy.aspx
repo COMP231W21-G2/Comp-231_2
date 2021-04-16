@@ -5,8 +5,8 @@
            
             <div>
                 <h4 class="textAlignCenter" style="float:left">Medicines List</h4>
-                <asp:button id="btn_lab_reports" runat="server" CssClass="btn btn-primary floatRight" Width="10%" Text="Lab Reports"></asp:button>
-                <asp:button id="btn_cart" runat="server" CssClass="btn btn-primary floatRight" Width="10%" Text="Cart"></asp:button>
+                <asp:button id="btn_lab_reports" runat="server" CssClass="btn btn-primary floatRight" Width="10%" OnClick="btn_labreport_OnClick" Text="Lab Reports"></asp:button>
+                <asp:button id="btn_cart" runat="server" CssClass="btn btn-primary floatRight" Width="10%" Text="Cart" Visible="False"></asp:button>
                     
             </div>
             <div style="width: 40%;">

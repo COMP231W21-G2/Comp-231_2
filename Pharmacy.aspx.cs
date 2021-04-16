@@ -13,6 +13,10 @@ namespace Covid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["User"] == null)
+            {
+                Response.Redirect("PatientLogin.aspx");
+            }
             if (!IsPostBack)
             {
                 BindMedicines();
@@ -43,11 +47,16 @@ namespace Covid
                 if (listItem.Selected)
                 {
                     cartItems.Add(listItem.Text,Convert.ToDouble(listItem.Value));
-                    
+                    //do some work 
                 }
             }
 
             Session["CartItems"] = cartItems;
+        }
+
+        protected void btn_labreport_OnClick(object sender, EventArgs e)
+        {
+            Response.Redirect("LabReports.aspx");
         }
     }
 }
