@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MyAccount.aspx.cs" Inherits="Covid.MyAccount" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MyAccount.aspx.cs" Inherits="Covid.MyAccount" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div id="myaccountdiv">
     <button style="font-size: 20px; float: right;"><i class="fa fa-gear"></i></button>
@@ -9,7 +9,7 @@
         </div>
         <div>
             <label>Address :</label>
-            <asp:TextBox type="text" ID="text_Name" class="form-control" runat="server"/>
+            <asp:TextBox type="text" ID="text_address" class="form-control" runat="server"/>
         </div>
         <div>
             <label>DOB :</label>
@@ -34,4 +34,3 @@
     <asp:label id="lbl_Result" Visible="False" ForeColor="Green" runat="server" CssClass="text-center"></asp:label>
     <asp:HiddenField id="hdnDate" runat="server" />
 </asp:Content>
-
