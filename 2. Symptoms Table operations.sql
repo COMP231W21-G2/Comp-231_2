@@ -12,17 +12,17 @@ GO
 CREATE procedure [SHP].[opeartion_symptoms_byadmin](@name varchar(200),@action varchar(100) )
 AS
 BEGIN
-	IF(@action = 'IT')
+	IF(@action = 'Inesrt')
 	BEGIN
 		Insert into SHP.symptoms (symptom) 		VALUES 		(@name);
 		Select 1;
 	END
-	IF(@action = 'DT')
+	IF(@action = 'Delete')
 	BEGIN
 		DELETE FROM SHP.symptoms  WHERE symptom = @name ;
 		Select 1;
 	END
-	ELSE IF(@action = 'U')
+	ELSE IF(@action = 'Update')
 	BEGIN
 		UPDATE SHP.symptoms   SET symptom = @name where symptom = @name ;
 		
