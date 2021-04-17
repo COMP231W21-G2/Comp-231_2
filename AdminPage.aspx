@@ -29,7 +29,7 @@
                     </ItemTemplate>
                     <EditItemTemplate>
                         <asp:TextBox ID="txtUserName" runat="server" Text='<%# Eval("name") %>' Width="150"></asp:TextBox>
-                    </EditItemTemplate>
+                    </EditItemTemplate> 
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="User Type">
                     <ItemTemplate>
