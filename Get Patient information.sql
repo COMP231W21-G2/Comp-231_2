@@ -13,3 +13,4 @@ BEGIN
 	FROM SHP.user_details WHERE userid = @userid; 
 END
 
+
