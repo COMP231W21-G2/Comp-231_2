@@ -46,7 +46,7 @@
                         <asp:TextBox ID="txtUserAdd" runat="server" Text='<%# Eval("address") %>' Width="150"></asp:TextBox>
                     </EditItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Daet Of Birth">
+                <asp:TemplateField HeaderText="Date Of Birth">
                     <ItemTemplate>
                         <asp:Label ID="Label3" runat="server"
                                    Text='<%# DataBinder.Eval(Container, "DataItem.dob","{0:dd, MMM yyyy}") %>'></asp:Label>
