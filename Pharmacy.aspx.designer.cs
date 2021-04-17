@@ -20,5 +20,6 @@ namespace Covid
 
 
         protected global::System.Web.UI.WebControls.Button btn_buy;
+        
     }
 }
