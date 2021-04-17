@@ -17,7 +17,7 @@ BEGIN
 	ELSE
 	BEGIN
 		SELECT *
-		FROM SHP.[S	P]
+		FROM SHP.[Schedule_appointment]
 		WHERE patient_id = @patientId;
 	END	
 END
