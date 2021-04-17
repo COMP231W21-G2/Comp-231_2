@@ -12,3 +12,4 @@ BEGIN
 	SELECT userid, name, address, dob, email, phone_no, med_history , [user_type]
 	FROM SHP.user_details WHERE userid = @userid; 
 END
+
